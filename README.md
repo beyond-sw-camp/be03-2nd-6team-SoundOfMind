@@ -60,6 +60,11 @@
 
 ![image](https://github.com/fa7271/som/assets/48422615/67dfd253-9f41-4da9-8950-bb7ff46f00d4)
 
+## WBS
+
+![image](https://github.com/beyond-sw-camp/be03-2nd-6team-SoundOfMind/assets/48422615/e6c23891-19fe-4898-a221-d44daa62bf55)
+
+
 ##  📋ERD 
 
 <div align="center">
