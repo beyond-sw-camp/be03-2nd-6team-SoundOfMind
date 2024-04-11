@@ -26,7 +26,6 @@
 <br>
 [**장준혁** 🐰](https://github.com/GreatJang) (서비스개발)
 
-
 <br>
 
 ---
@@ -36,7 +35,6 @@
 ##  💻STACK
 
 </div>
-
 
 <div align=center> 
 
@@ -51,20 +49,16 @@
 <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
 <img src="https://img.shields.io/badge/jirasoftware-0052CC?style=for-the-badge&logo=jirasoftware&logoColor=white">
 
-
 <br>
 
 ---
 
 <br>
-
 </div>
 
 ## 프로젝트 관리
 
 ![image](https://github.com/fa7271/som/assets/48422615/67dfd253-9f41-4da9-8950-bb7ff46f00d4)
-
-
 
 ##  📋ERD 
 
@@ -73,14 +67,11 @@
 <img src="https://github.com/fa7271/som/assets/150704738/5722a510-9e79-4e60-ae85-aca6912cfdc0" width="800" height="600"/>
 
 </div>
-
 <br>
 
 ---
 
 </br>
-
-<br><br><br>
 
 ## 🌠프로젝트 소개
 
@@ -122,6 +113,8 @@
 <details>
 <summary>자세히 보기(click)</summary>
 
+ #### 📌 API 명세서
+ ![image](https://github.com/beyond-sw-camp/be03-fin-5TEAM-KIP/assets/148752498/91eba0ea-0ba5-4af9-8200-778537a520ae)
 
 |구분|요구사항 명|요구사항 설명|
 |:---:|:---:|:---:|
@@ -156,18 +149,15 @@
 ||댓글 작성|"게시글에 댓글을 달 수 있는 부분이 있고 댓글을 작성 후 다시 상세정보를 호출해 댓글을 확인할 수 있다"|
 ||댓글 삭제|"자신이 단 댓글을 삭제할 수 있다. 어드민의 경우 자신이 작성한 댓글이아니어도 삭제할 수 있다"|
 </details>
-
 <br>
 
 ---
 
 </br>
-<br><br><br>
 
 ##  📋기술 설계도
 
 <div align="center">
-
 <img src="https://github.com/fa7271/som/assets/150704738/7ac41841-1dc2-4717-bdd7-5461c26e08e8" width="800" height="600"/>
 </div>
 
@@ -176,10 +166,7 @@ SOM 프로젝트의 개발적인 목표는 프로젝트를 실무에서 여러 �
 표준화개발팀 이혜선, 이창선과 서비스개발팀 송보석 장준혁으로 팀을 분리하여 관리 책임 및 기능 개발을 진행했습니다.   
 표준화개발에서는 표준화된 스켈레톤과 공통 라이브러리, 계정 관리 및 보안 배포 등을 담당하였으며 서비스개발팀에서는 익명게시판 서비스 기능들을 개발하였습니다. 
 
-<br><br><br>
-
 ## 원활한 커뮤니케이션을 위한 익명게시판 개발
-
 
 ![image](https://github.com/fa7271/som/assets/48422615/9badb8d5-b829-47cc-b63b-c2ccd441515c)
 
@@ -201,10 +188,7 @@ Post 테이블에서 가져오기 때문에 post 테이블의 Views 숫자와 �
 어뷰징 금지를 위해서 게시글 본 이력을 레디스에 userid가 키이고 user가 본 postid들을 저장합니다.
 매일00시00분에 각 post에 조회수를 세서 디비에 postid 1개당 하나의 컬럼이 들어가고 일간,주간, 월간 조회수를 구할때 @query로 구해온다.
 
-<br><br><br>
-
 ## 모놀로식에서 MSA 로!
-
 
 ![image](https://github.com/fa7271/som/assets/48422615/20d7ed76-3ce5-4db8-9f69-0c8b20dff1ef)
 
@@ -217,10 +201,7 @@ MSA 아키텍처 도입으로 프론트 vue(localhost:3000)에서 오는 요청�
 보안은 각 서비스 마다 적용하여, 서비스가 요청될 때 보안 필터체인을 타도록 했습니다.
 feign을 통한 internal 서비스 요청은 permitAll 하여 인증없이 통과되도록 하였습니다.
 
-<br><br><br>
-
 ## 익명게시판을 악의적으로 사용하는 유저에 대한 제재 
-
 
 **관리자만의 슈퍼 권한**
 익명게시판이지만 자신이 글을 달고 다른 사람인척 댓글을 다는 익명유저를 관리하기 위해 어드민은 닉네임을 확인할 수 있습니다. 
@@ -238,32 +219,72 @@ export_html 메서드: 이 메서드는 주어진 HTML 문서에서 욕설을 �
 
 change 메서드: 이 메서드는 주어진 텍스트에서 대소문자를 무시하고 주어진 욕설 단어를 대체값으로 변경합니다. 예를들어 병신새끼 처럼 혹은 욕이 두개로 합쳐져 있는경우나 욕 사이에 숫자 특수문자 넣은 경우도 필터합니다.
 
-
-
-
-
-
-
 <br>
 
 ---
 
 </br>
 
+## 🆙쿠퍼네티스 배포 
 
+<details>
+<summary>배포과정 보기(click)</summary>
+
+ #로드맵#
+![image](https://github.com/fa7271/som/assets/150704738/c752c768-3812-40f5-8084-195fcc2082b2)
+---
+![image](https://github.com/fa7271/som/assets/150704738/4846b3f0-9d36-4fe5-8a15-edb711c79f0b)
+---
+![image](https://github.com/fa7271/som/assets/150704738/14fd025c-cf65-4ba7-8d11-b9d722cf3694)
+---
+![image](https://github.com/fa7271/som/assets/150704738/e44f3a95-f2da-4848-a317-817b1d39cae3)
+---
+![image](https://github.com/fa7271/som/assets/150704738/64e1b8f6-2386-4ad4-9a79-5306de008134)
+---
+![image](https://github.com/fa7271/som/assets/150704738/81fe2771-9d0c-48d6-a622-bc4441b0b74d)
+---
+![image](https://github.com/fa7271/som/assets/150704738/4b29e87c-6126-44e3-b4c8-227714ccb5a0)
+---
+![image](https://github.com/fa7271/som/assets/150704738/63f25787-f06d-476f-b633-3b2a04254ce8)
+---
+![image](https://github.com/fa7271/som/assets/150704738/2edd4f93-3695-451e-8027-b21348ee6b1a)
+---
+
+</details>
+<br>
+
+---
+
+</br>
 
 ##  📝테스트 및 결과
 
 <details>
 <summary>테스트 및 결과보기(click)</summary>
+
+ #### 📌회원가입
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/badc9028-2a83-491d-82c3-e6bdf31261d7)
+---
+ #### 📌로그인
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/12e716c8-36fe-4ef8-aa28-8fe1a54cf3f2)
+---
+ #### 📌관리자 회원관리
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/a1d70fb4-80ce-41dc-8fe1-fd7d878f7802)
+---
+ #### 📌관리자 게시글관리
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/7d8ec360-8ac2-4a3a-b484-08749d066ee5)
+---
+ #### 📌게시글 목록
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/04ea3a5e-7fbe-426b-bc1d-617c36084d06)
+---
+ #### 📌게시글 내용
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/052fed4b-aad7-4560-b183-2ec9749d05ad)
+---
+ #### 📌사용자 및 게시글 랭킹
+ ![image](https://github.com/beyond-sw-camp/be03-4th-6team-som-DevOps/assets/148752498/1af91ba3-bf7e-4d22-8675-0f31cfd36f91)
+---
 </details>
 
+<div align="center">
+ 
 ![footer](https://capsule-render.vercel.app/api?type=shark&height=200&text=Thank%20you&section=footer&reversal=true&fontColor=FFFFFF&fontAlign=83&fontAlignY=89&fontSize=38)
-
-
-
-   
-
-
-
-
